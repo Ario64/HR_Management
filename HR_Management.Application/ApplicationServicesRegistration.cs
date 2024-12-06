@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using HR_Management.Application.profiles;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HR_Management.Application;
