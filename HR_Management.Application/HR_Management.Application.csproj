@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +17,12 @@
 
   <ItemGroup>
     <Folder Include="DTOs\LeaveAllocationDTOs\" />
+    <Folder Include="features\LeaveAllocation\Handlers\" />
+    <Folder Include="features\LeaveAllocation\Requests\" />
+    <Folder Include="features\LeaveRequest\Handlers\" />
+    <Folder Include="features\LeaveRequest\Requests\" />
+    <Folder Include="features\LeaveType\Handlers\Commands\" />
+    <Folder Include="features\LeaveType\Requests\Commands\" />
   </ItemGroup>
 
 </Project>
