@@ -17,10 +17,11 @@
 
   <ItemGroup>
     <Folder Include="DTOs\LeaveAllocationDTOs\" />
-    <Folder Include="features\LeaveAllocation\Handlers\" />
-    <Folder Include="features\LeaveAllocation\Requests\" />
-    <Folder Include="features\LeaveRequest\Handlers\" />
-    <Folder Include="features\LeaveRequest\Requests\" />
+    <Folder Include="features\LeaveAllocation\Handlers\Commands\" />
+    <Folder Include="features\LeaveAllocation\Requests\Commands\" />
+    <Folder Include="features\LeaveRequest\Handlers\Commands\" />
+    <Folder Include="features\LeaveRequest\Handlers\Queries\" />
+    <Folder Include="features\LeaveRequest\Requests\Commands\" />
     <Folder Include="features\LeaveType\Handlers\Commands\" />
     <Folder Include="features\LeaveType\Requests\Commands\" />
   </ItemGroup>
