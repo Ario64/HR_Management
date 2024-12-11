@@ -16,8 +16,11 @@ public class UpdateLeaveAllocationCommandHandler : IRequestHandler<UpdateLeaveAl
         _mapper = mapper;
     }
 
-    public Task<Unit> Handle(UpdateLeaveAllocationCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(UpdateLeaveAllocationCommand request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        var leaveAllocation = await _leaveAllocationRepository.Get(request.UpdateLeaveAllocationDto!.Id);
+        _mapper.Map(request.UpdateLeaveAllocationDto, leaveAllocation);
+        await _leaveAllocationRepository.Update(leaveAllocation);
+        return Unit.Value;
     }
 }

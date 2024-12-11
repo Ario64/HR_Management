@@ -16,8 +16,19 @@ public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveReque
         _mapper = mapper;
     }
 
-    public Task<Unit> Handle(UpdateLeaveRequestCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(UpdateLeaveRequestCommand request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        var leaveRequest = await _leaveRequestRepository.Get(request.Id);
+
+        if (request.UpdateLeaveRequestDto != null)
+        {
+            _mapper.Map(request.UpdateLeaveRequestDto, leaveRequest);
+            await _leaveRequestRepository.Update(leaveRequest);
+        }
+        else if (request.ChangeLeaveRequestApprovalDto != null)
+        {
+            await _leaveRequestRepository.ChangeApprovalStatus(leaveRequest, request.ChangeLeaveRequestApprovalDto.Approved);
+        }
+        return Unit.Value;
     }
 }
