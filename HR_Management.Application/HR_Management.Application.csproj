@@ -16,10 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="features\LeaveAllocation\Handlers\Commands\" />
     <Folder Include="features\LeaveRequest\Handlers\Commands\" />
     <Folder Include="features\LeaveRequest\Handlers\Queries\" />
-    <Folder Include="features\LeaveRequest\Requests\Commands\" />
   </ItemGroup>
 
 </Project>
