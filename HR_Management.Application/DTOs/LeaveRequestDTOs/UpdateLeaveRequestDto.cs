@@ -2,7 +2,7 @@
 
 namespace HR_Management.Application.DTOs.LeaveRequestDTOs;
 
-public class UpdateLeaveRequestDto : BaseDto
+public class UpdateLeaveRequestDto : BaseDto , ILeaveRequestDto
 {
     public int LeaveTypeId { get; set; }
     public DateTime StartDate { get; set; }
