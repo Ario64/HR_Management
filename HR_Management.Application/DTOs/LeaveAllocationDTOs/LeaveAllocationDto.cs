@@ -4,7 +4,7 @@ using HR_Management.Domain;
 
 namespace HR_Management.Application.DTOs.LeaveAllocationDTOs;
 
-public class LeaveAllocationDto : BaseDto
+public class LeaveAllocationDto : BaseDto, ILeaveAllocationDto
 {
     public int LeaveTypeId { get; set; }
     public int NumberOfDate { get; set; }

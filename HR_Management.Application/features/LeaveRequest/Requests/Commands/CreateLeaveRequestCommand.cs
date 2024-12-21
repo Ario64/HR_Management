@@ -5,5 +5,5 @@ namespace HR_Management.Application.features.LeaveRequest.Requests.Commands;
 
 public class CreateLeaveRequestCommand : IRequest<int>
 {
-    public LeaveRequestDto? LeaveRequestDto { get; set; }
+    public CreateLeaveRequestDto? CreateLeaveRequestDto { get; set; }
 }

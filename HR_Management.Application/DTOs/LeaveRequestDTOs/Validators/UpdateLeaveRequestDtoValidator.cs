@@ -12,6 +12,7 @@ public class UpdateLeaveRequestDtoValidator : AbstractValidator<UpdateLeaveReque
         _leaveTypeRepository = leaveTypeRepository;
 
         Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
+
         RuleFor(r => r.Id)
             .NotNull()
             .WithMessage("{PropertyName} is required.");

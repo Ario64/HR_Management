@@ -2,7 +2,7 @@
 
 namespace HR_Management.Application.DTOs.LeaveAllocationDTOs;
 
-public class UpdateLeaveAllocationDto : BaseDto
+public class UpdateLeaveAllocationDto : BaseDto, ILeaveAllocationDto
 {
     public int LeaveTypeId { get; set; }
     public int NumberOfDate { get; set; }
