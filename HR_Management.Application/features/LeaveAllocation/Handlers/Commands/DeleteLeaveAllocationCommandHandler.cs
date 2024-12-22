@@ -1,4 +1,5 @@
-﻿using HR_Management.Application.features.LeaveAllocation.Requests.Commands;
+﻿using HR_Management.Application.exceptions;
+using HR_Management.Application.features.LeaveAllocation.Requests.Commands;
 using HR_Management.Application.persistence.contracts;
 using MediatR;
 
@@ -16,6 +17,11 @@ public class DeleteLeaveAllocationCommandHandler : IRequestHandler<DeleteLeaveAl
     public async Task<Unit> Handle(DeleteLeaveAllocationCommand request, CancellationToken cancellationToken)
     {
         var leaveAllocation = await _leaveAllocationRepository.Get(request.Id);
+        if (leaveAllocation == null)
+        {
+            throw new NotFoundException(nameof(Domain.LeaveAllocation), request.Id);
+        }
+
         await _leaveAllocationRepository.Delete(leaveAllocation);
         return Unit.Value;
     }
