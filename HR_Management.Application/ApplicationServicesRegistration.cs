@@ -5,9 +5,9 @@ namespace HR_Management.Application;
 
 public static class ApplicationServicesRegistration
 {
-    public static void ConfigureApplicationServices(this IServiceCollection service)
+    public static void ConfigureApplicationServices(this IServiceCollection services)
     {
         //service.AddAutoMapper(typeof(MappingProfile));
-        service.AddAutoMapper(Assembly.GetExecutingAssembly());
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
     }
 }

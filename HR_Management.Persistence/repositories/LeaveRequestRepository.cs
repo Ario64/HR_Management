@@ -1,4 +1,4 @@
-﻿using HR_Management.Application.persistence.contracts;
+﻿using HR_Management.Application.contracts.persistence;
 using HR_Management.Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,5 +40,6 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveReq
         leaveRequest.Approved = approvalStatus;
         _context.Entry(leaveRequest).State = EntityState.Modified;
         await _context.SaveChangesAsync();
+
     }
 }

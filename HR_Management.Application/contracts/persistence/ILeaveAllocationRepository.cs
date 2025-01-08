@@ -1,7 +1,6 @@
-﻿using HR_Management.Application.DTOs.LeaveAllocationDTOs;
-using HR_Management.Domain;
+﻿using HR_Management.Domain;
 
-namespace HR_Management.Application.persistence.contracts;
+namespace HR_Management.Application.contracts.persistence;
 
 public interface ILeaveAllocationRepository : IGenericRepository<LeaveAllocation>
 {

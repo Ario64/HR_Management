@@ -1,6 +1,6 @@
-﻿using HR_Management.Application.exceptions;
+﻿using HR_Management.Application.contracts.persistence;
+using HR_Management.Application.exceptions;
 using HR_Management.Application.features.LeaveAllocation.Requests.Commands;
-using HR_Management.Application.persistence.contracts;
 using MediatR;
 
 namespace HR_Management.Application.features.LeaveAllocation.Handlers.Commands;

@@ -53,4 +53,5 @@ public class LeaveManagementDbContext : DbContext
 
         return base.SaveChanges();
     }
+
 }

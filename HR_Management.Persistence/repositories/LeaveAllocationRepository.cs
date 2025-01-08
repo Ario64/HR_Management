@@ -1,4 +1,4 @@
-﻿using HR_Management.Application.persistence.contracts;
+﻿using HR_Management.Application.contracts.persistence;
 using HR_Management.Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,5 +33,6 @@ public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILe
             .ToListAsync();
 
         return leaveAllocations;
+
     }
 }

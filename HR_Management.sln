@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Management.Domain", "HR_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Management.Application", "HR_Management.Application\HR_Management.Application.csproj", "{1156328F-6CEB-47D4-A86B-DD3C40906F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Management.Infrasrtucture", "HR_Management.Infrasrtucture\HR_Management.Infrasrtucture.csproj", "{98A03253-9A01-4703-96FC-646980727288}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Management.Infrastructure", "HR_Management.Infrasrtucture\HR_Management.Infrastructure.csproj", "{98A03253-9A01-4703-96FC-646980727288}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Management.Persistence", "HR_Management.Persistence\HR_Management.Persistence.csproj", "{242EE739-B08D-4BF6-9FFE-EA117A9AE564}"
 EndProject

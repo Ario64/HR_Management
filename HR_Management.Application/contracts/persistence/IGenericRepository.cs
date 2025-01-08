@@ -1,4 +1,4 @@
-﻿namespace HR_Management.Application.persistence.contracts;
+﻿namespace HR_Management.Application.contracts.persistence;
 
 public interface IGenericRepository<T> where T : class
 {
