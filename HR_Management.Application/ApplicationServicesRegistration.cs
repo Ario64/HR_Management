@@ -9,5 +9,6 @@ public static class ApplicationServicesRegistration
     {
         //service.AddAutoMapper(typeof(MappingProfile));
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
     }
 }
